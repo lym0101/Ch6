@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SquareCube {
+public class Root {
     public static void main(String[] args) {
         double sqrt = squareRoot();
         System.out.println(sqrt);
