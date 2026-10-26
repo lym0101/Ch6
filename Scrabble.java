@@ -1,5 +1,5 @@
 public class canSpell {
-    public static boolean canSpell(String tiles, String word) {
+    public static boolean Scrabble(String tiles, String word) {
     for (int i = 0; i < word.length(); i++) {
         int index = tiles.indexOf(word.charAt(i));
         if (index == -1) {
