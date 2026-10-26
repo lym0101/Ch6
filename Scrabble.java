@@ -11,8 +11,8 @@ public class canSpell {
 }
 
     public static void main(String[] args) {
-        System.out.println(canSpell("hello", "hleol"));
-        System.out.println(canSpell("world", "dlrow"));
-        System.out.println(canSpell("java", "jav"));
+        System.out.println(Scrabble("hello", "hleol"));
+        System.out.println(Scrabble("world", "dlrow"));
+        System.out.println(Scrabble("java", "jav"));
     }
 }
