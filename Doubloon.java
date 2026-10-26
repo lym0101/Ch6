@@ -1,4 +1,4 @@
-public class isDoubloon {
+public class Doubloon {
     public static boolean isDoubloon(String s) {
     s = s.toLowerCase();
     for (char c = 'a'; c <= 'z'; c++) {         
@@ -17,7 +17,7 @@ public class isDoubloon {
 
     public static void main(String[] args) {
         System.out.println(isDoubloon("Abba")); 
-        System.out.println(isDoubloon("Hello")); 
+        System.out.println(isDoubloon("wabababababa")); 
         System.out.println(isDoubloon("Dada")); 
     }
 }
