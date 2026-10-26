@@ -1,5 +1,5 @@
 public class gauss {
-    public static double gauss(double x, int n) {
+    public static double Gauss(double x, int n) {
     double term = 1.0; 
     double sum = 0.0;
     for (int i = 0; i < n; i++) {
@@ -9,7 +9,7 @@ public class gauss {
     return sum;
 }
     public static void main(String[] args) {
-        System.out.println(gauss(1, 10));
-        System.out.println(gauss(2, 10));    
+        System.out.println(Gauss(1, 10));
+        System.out.println(Gauss(2, 10));    
     }
 }
