@@ -3,10 +3,10 @@ public class isAbecedarian {
         s = s.toLowerCase(); // convert to lowercase for uniformity
         for (int i = 0; i < s.length() - 1; i++) {
             if (s.charAt(i) > s.charAt(i + 1)) {
-                return false; // found a character that is greater than the next one
+                return false;
             }
         }
-        return true; // all characters are in alphabetical order
+        return true;
     }
 
     public static void main(String[] args) {
