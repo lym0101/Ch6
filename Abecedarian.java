@@ -1,4 +1,4 @@
-public class isAbecedarian {
+public class Abecedarian {
     public static boolean isAbecedarian(String s) {
         s = s.toLowerCase();
         for (int i = 0; i < s.length() - 1; i++) {
