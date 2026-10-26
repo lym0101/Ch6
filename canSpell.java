@@ -1,27 +1,18 @@
 public class canSpell {
-    public static boolean canSpell(String word, String letters) {
-        word = word.toLowerCase(); // convert to lowercase for uniformity
-        letters = letters.toLowerCase(); // convert to lowercase for uniformity
-        int[] letterCounts = new int[26]; // array to count occurrences of each letter in letters
-        for (char c : letters.toCharArray()) {
-            if (Character.isLetter(c)) {
-                letterCounts[c - 'a']++; // increment count for this letter
-            }
+    public static boolean canSpell(String tiles, String word) {
+    for (int i = 0; i < word.length(); i++) {
+        int index = tiles.indexOf(word.charAt(i));
+        if (index == -1) {
+            return false;
         }
-        for (char c : word.toCharArray()) {
-            if (Character.isLetter(c)) {
-                if (letterCounts[c - 'a'] == 0) { // check if the letter is available
-                    return false;
-                }
-                letterCounts[c - 'a']--; // use one occurrence of this letter
-            }
-        }
-        return true;
+        tiles = tiles.substring(0, index) + tiles.substring(index + 1);
     }
+    return true;
+}
 
     public static void main(String[] args) {
-        System.out.println(canSpell("hello", "hleol")); // true
-        System.out.println(canSpell("world", "dlrow")); // true
-        System.out.println(canSpell("java", "jav")); // false
+        System.out.println(canSpell("hello", "hleol"));
+        System.out.println(canSpell("world", "dlrow"));
+        System.out.println(canSpell("java", "jav"));
     }
 }
