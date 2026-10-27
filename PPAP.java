@@ -12,7 +12,7 @@ public class PPAP {
 		String b = in.next();
 		in.nextLine();
 		
-		System.out.println(ppap(phrase);
+		System.out.println(ppap(phrase));
 	}
 	
 	public static String ppap (String s) {
